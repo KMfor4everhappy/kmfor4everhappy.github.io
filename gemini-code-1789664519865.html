@@ -1,0 +1,39 @@
+<div class="app-container">
+  <header class="app-header">
+    <div class="brand">
+      <span class="logo-icon">🎬</span>
+      <h1>Sibling<span>Tube</span></h1>
+    </div>
+    
+    <div class="profile-selector">
+      <button class="profile-btn active" data-age="younger">👧 Alex (Kids)</button>
+      <button class="profile-btn" data-age="older">👦 Sam (Teens)</button>
+      <button class="profile-btn parent-btn" id="parentLockBtn">🔒 Parent Mode</button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="hero-banner">
+      <h2>Welcome to your Private Family Vault</h2>
+      <p>Videos synced directly from your secure Google Drive folder.</p>
+    </div>
+
+    <section class="video-section">
+      <h3 id="sectionTitle">Shared Family Queue</h3>
+      <div class="video-grid" id="videoGrid">
+        <!-- Dynamic video cards load here -->
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- Modal Player -->
+<div class="modal" id="videoModal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <div class="player-wrapper">
+      <iframe id="drivePlayer" src="" allow="autoplay" frameborder="0"></iframe>
+    </div>
+    <h3 id="modalVideoTitle">Video Title</h3>
+  </div>
+</div>
